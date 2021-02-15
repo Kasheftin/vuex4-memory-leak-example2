@@ -1,12 +1,8 @@
 import { createStore } from 'vuex'
+import * as example from './example'
 
 export default createStore({
-  state: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
   modules: {
+    example: { ...example, namespaced: true }
   }
 })
